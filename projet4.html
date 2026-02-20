@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Projet 4 - Afficheur 7 segments</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background: radial-gradient(circle at top, #0f2027, #0b1c22 60%, #000);
+}
+
+.main-wrapper{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.title-banner{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title-banner h1{
+    font-size:3em;
+    color:#00ff88;
+    text-shadow:0 0 20px #00ff88aa;
+}
+
+.title-banner h2{
+    font-size:2.2em;
+    margin-top:10px;
+    background:linear-gradient(90deg,#00f0ff,#ff00c8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.4s ease;
+}
+
+.card:hover{
+    box-shadow:0 0 25px #00f0ff66;
+}
+
+.section-title{
+    font-size:1.3em;
+    margin-bottom:15px;
+    color:#00f0ff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.symbol{
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.image-container{
+    text-align:center;
+    margin:30px 0;
+}
+
+.image-container img{
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,240,255,0.4);
+}
+
+.student-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:20px;
+}
+
+.student-box{
+    background:linear-gradient(145deg,#111,#1c1c1c);
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #00f0ff33;
+    transition:0.3s;
+}
+
+.student-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px #ff00c855;
+}
+
+a{
+    color:#00f0ff;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:linear-gradient(90deg,transparent,#00f0ff,transparent);
+    margin:40px 0;
+}
+
+@media(max-width:900px){
+    .student-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main-wrapper">
+
+<div class="title-banner">
+    <h1>Projet IT 1ère STI2D</h1>
+    <h2>Afficheur 7 segments</h2>
+</div>
+
+<div class="card">
+<p><strong>Objectif :</strong> Etudier et réaliser un afficheur 7 segments en carton</p>
+</div>
+
+<div class="image-container">
+    <img src="images/P4image.jpg" alt="Afficheur 7 segments en carton">
+</div>
+
+<div class="card">
+<div class="section-title">Représentation des flux MEI :</div>
+
+
+
+<div class="image-container">
+    <img src="images/P4mei.jpg" alt="Représentation des flux MEI">
+</div>
+</div>
+
+<hr>
+
+<div class="card">
+<div class="section-title">Travail demandé :</div>
+
+<p><strong>En groupe (commun à toutes les parties) :</strong></p>
+
+<p>
+<span class="symbol"></span> Elaborer un cahier des charges avec les divers éléments en votre possession.<br>
+<span class="symbol"></span> Carte mentale<br>
+<span class="symbol"></span> Diagramme SysML
+</p>
+
+<p>
+<span class="symbol"></span> Vidéo de présentation du projet complet.<br>
+<span class="symbol"></span> Réaliser une présentation de votre projet sous un format de 2 minutes de manière dynamique. (Depuis les croquis jusqu’au prototype en passant par la modélisation et test).
+</p>
+
+<p>
+<span class="symbol"></span> Soutenance orale.<br>
+<span class="symbol"></span> A la fin du projet vous passerez une soutenance orale de 5 minutes. Vous présenterez votre démarche et une démonstration du fonctionnement de votre système.
+</p>
+</div>
+
+<div class="card">
+<div class="section-title">Par élève :</div>
+
+<div class="student-grid">
+
+<div class="student-box">
+<strong>Elève 1</strong>
+<p> Fabrication de la structure</p>
+</div>
+
+<div class="student-box">
+<strong>Elève 2</strong>
+<p> Fixation de servomoteur, etc…</p>
+</div>
+
+<div class="student-box">
+<strong>Elève 3</strong>
+<p> Gérer la partie informatique (commande des servomoteurs)</p>
+<p> Réaliser l’étude de la consommation électrique du système et faire une comparaison avec un système de la même taille à afficheur 7 segments diodes.</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="section-title">Matériels nécessaires :</div>
+
+<p>
+ Ordinateur + carte arduino<br>
+ Servomoteurs SG90 + carte bus I2C PCA9685<br>
+<a href="https://cdn-learn.adafruit.com/downloads/pdf/16-channel-pwm-servo-driver.pdf" target="_blank">
+https://cdn-learn.adafruit.com/downloads/pdf/16-channel-pwm-servo-driver.pdf
+</a><br>
+ Carton<br>
+ Divers petit matériel (tringlerie)
+</p>
+
+<hr>
+
+<div class="section-title">Méthode de fabrication :</div>
+<p>
+Manuel (cutter, colle, …….)
+</p>
+</div>
+
+<div style="text-align:center;">
+<a href="index.htm" class="button-back">Retour à l'index</a>
+</div>
+
+</div>
+
+</body>
+</html>

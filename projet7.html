@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Projet 7 - Éolienne low-tech</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background: radial-gradient(circle at top, #0f2027, #0b1c22 60%, #000);
+}
+
+.main-wrapper{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.title-banner{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title-banner h1{
+    font-size:3em;
+    color:#00ff88;
+    text-shadow:0 0 20px #00ff88aa;
+}
+
+.title-banner h2{
+    font-size:2.2em;
+    margin-top:10px;
+    background:linear-gradient(90deg,#00f0ff,#ff00c8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.4s ease;
+}
+
+.card:hover{
+    box-shadow:0 0 25px #00f0ff66;
+}
+
+.section-title{
+    font-size:1.3em;
+    margin-bottom:15px;
+    color:#00f0ff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.symbol{
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.image-container{
+    text-align:center;
+    margin:30px 0;
+}
+
+.image-container img{
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,240,255,0.4);
+}
+
+.student-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:20px;
+}
+
+.student-box{
+    background:linear-gradient(145deg,#111,#1c1c1c);
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #00f0ff33;
+    transition:0.3s;
+}
+
+.student-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px #ff00c855;
+}
+
+a{
+    color:#00f0ff;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:linear-gradient(90deg,transparent,#00f0ff,transparent);
+    margin:40px 0;
+}
+
+@media(max-width:900px){
+    .student-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main-wrapper">
+
+<div class="title-banner">
+    <h1>Projet IT 1ère STI2D</h1>
+    <h2>Éolienne LowTech</h2>
+</div>
+
+<div class="card">
+<p><strong>Objectif :</strong> Comment concevoir et réaliser une éolienne low-tech capable de convertir l’énergie cinétique du vent en énergie électrique exploitable (5V USB), en optimisant le rendement tout en respectant des contraintes de simplicité, coût réduit et impact environnemental minimal ?</p>
+</div>
+
+<div class="image-container">
+    <img src="images/P7image.jpg" alt="Éolienne low-tech">
+</div>
+
+<div class="card">
+<div class="section-title">Représentation des flux MEI :</div>
+
+
+
+<div class="image-container">
+    <img src="images/P7mei.jpg" alt="Représentation des flux MEI">
+</div>
+</div>
+
+<hr>
+
+<div class="card">
+<div class="section-title">Présentation du système :</div>
+
+<p>
+Monsieur Pierre DUPONT est propriétaire d’une maison de campagne et il souhaite l’équiper d’une éolienne bon marché.
+</p>
+
+<div class="section-title">Le(s) problème(s) technique à résoudre.</div>
+
+<p>
+Réaliser l’éolienne avec du matériels de récupération.
+</p>
+</div>
+
+<div class="card">
+<div class="section-title">Travail demandé :</div>
+
+<p>
+L'objectif est de réaliser une éolienne fonctionnelle avec du matériel de récupération et de tester son bon fonctionnement.
+</p>
+
+<p><strong>En groupe (commun à toutes les parties) :</strong></p>
+
+<p>
+<span class="symbol"></span> Elaborer un cahier des charges avec les divers éléments en votre possession.<br>
+<span class="symbol"></span> Carte mentale<br>
+<span class="symbol"></span> Diagramme SysML
+</p>
+
+<p>
+<span class="symbol"></span> Vidéo de présentation du projet complet.<br>
+<span class="symbol"></span> Réaliser une présentation de votre projet sous un format de 2 minutes de manière dynamique. (Depuis les croquis jusqu’au prototype en passant par la modélisation et test).
+</p>
+
+<p>
+<span class="symbol"></span> Soutenance orale.<br>
+<span class="symbol"></span> A la fin du projet vous passerez une soutenance orale de 5 minutes. Vous présenterez votre démarche et une démonstration du fonctionnement de votre système.
+</p>
+</div>
+
+<div class="card">
+<div class="section-title">Par élève :</div>
+
+<div class="student-grid">
+
+<div class="student-box">
+<strong>Elève 1</strong>
+<p>➢ Réaliser les pales et l’accouplement moteur</p>
+</div>
+
+<div class="student-box">
+<strong>Elève 2</strong>
+<p>➢ Réaliser la partie conversion électromécanique et régulation de tension</p>
+</div>
+
+<div class="student-box">
+<strong>Elève 3</strong>
+<p>➢ Réaliser la structure permettant d’accueillir la partie tournante et régulation de tension</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="section-title">Matériels nécessaires :</div>
+
+<p>
+Matériel du fablab.<br>
+ Divers petits matériels<br>
+Résistance, diode, etc……
+</p>
+
+<hr>
+
+<div class="section-title">Méthode de fabrication :</div>
+
+<p>
+ Manuelle<br>
+ Impression 3D
+</p>
+
+<hr>
+
+<div class="section-title">Ressources :</div>
+
+<p>
+<a href="https://wiki.lowtechlab.org/wiki/L%27%C3%A9olienne" target="_blank">
+https://wiki.lowtechlab.org/wiki/L%27%C3%A9olienne
+</a><br>
+Différents fichiers PDF
+</p>
+</div>
+
+<div style="text-align:center;">
+<a href="index.htm" class="button-back">Retour à l'index</a>
+</div>
+
+</div>
+
+</body>
+</html>

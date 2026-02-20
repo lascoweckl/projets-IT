@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Projet 3 - Ballon de rugby</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background: radial-gradient(circle at top, #0f2027, #0b1c22 60%, #000);
+}
+
+.main-wrapper{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.title-banner{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title-banner h1{
+    font-size:3em;
+    color:#00ff88;
+    text-shadow:0 0 20px #00ff88aa;
+}
+
+.title-banner h2{
+    font-size:2.2em;
+    margin-top:10px;
+    background:linear-gradient(90deg,#00f0ff,#ff00c8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.4s ease;
+}
+
+.card:hover{
+    box-shadow:0 0 25px #00f0ff66;
+}
+
+.section-title{
+    font-size:1.3em;
+    margin-bottom:15px;
+    color:#00f0ff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.symbol{
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.image-container{
+    text-align:center;
+    margin:30px 0;
+}
+
+.image-container img{
+    max-width:100%;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,240,255,0.4);
+}
+
+.student-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:20px;
+}
+
+.student-box{
+    background:linear-gradient(145deg,#111,#1c1c1c);
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #00f0ff33;
+    transition:0.3s;
+}
+
+.student-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px #ff00c855;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:linear-gradient(90deg,transparent,#00f0ff,transparent);
+    margin:40px 0;
+}
+
+@media(max-width:900px){
+    .student-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="main-wrapper">
+
+<div class="title-banner">
+    <h1>Projet IT 1<sup>ère</sup> STI2D</h1>
+    <h2>Ballon de rugby</h2>
+</div>
+
+<div class="card">
+<p><strong>Objectif :</strong> Comment concevoir un ballon de rugby capable d’émettre un signal sonore localisable afin de permettre à des joueurs aveugles ou malvoyants de se repérer pendant le jeu, tout en conservant les caractéristiques fonctionnelles d’un ballon classique ?</p>
+</div>
+
+<div class="image-container">
+    <img src="images/P3image.jpg" alt="Joueurs de rugby malvoyants">
+</div>
+
+<div class="card">
+<div class="section-title">Représentation des flux MEI :</div>
+
+
+<div class="image-container">
+    <img src="images/P3mei.jpg" alt="Représentation des flux MEI">
+</div>
+</div>
+
+<hr>
+
+<div class="card">
+<div class="section-title">Présentation du système :</div>
+
+<p>
+Afin de continuer à rendre le rugby accessible au personne malvoyante, nous proposons une évolution du ballon à grelots qui présenté un inconvénient majeur celui de ne pas sonner lorsque le ballon était arrêté.
+</p>
+
+<div class="section-title">Le(s) problème(s) technique à résoudre.</div>
+
+<p>
+Faire en sorte qu’il sonne même quand le ballon ne bouge pas.
+</p>
+</div>
+
+<div class="card">
+<div class="section-title">Travail demandé :</div>
+
+<p>
+L'objectif est de réaliser un ballon de rugby à partir des données proposées.
+</p>
+
+<p><strong>En groupe (commun à toutes les parties) :</strong></p>
+
+<p>
+<span class="symbol"></span> Elaborer un cahier des charges avec les divers éléments en votre possession.<br>
+<span class="symbol"></span> Carte mentale<br>
+<span class="symbol"></span> Diagramme SysML
+</p>
+
+<p>
+<span class="symbol"></span> Vidéo de présentation du projet complet.<br>
+<span class="symbol"></span> Réaliser une présentation de votre projet sous un format de 2 minutes de manière dynamique. (Depuis les croquis jusqu’au prototype en passant par la modélisation et test).
+</p>
+
+<p>
+<span class="symbol"></span> Soutenance orale.<br>
+<span class="symbol"></span> A la fin du projet vous passerez une soutenance orale de 5 minutes. Vous présenterez votre démarche et une démonstration du fonctionnement de votre système.
+</p>
+</div>
+
+<div class="card">
+<div class="section-title">Par élève :</div>
+
+<div class="student-grid">
+
+<div class="student-box">
+<strong>Elève 1</strong>
+<p>➢ Proposer et réaliser l'ossature du ballon</p>
+</div>
+
+<div class="student-box">
+<strong>Elève 2</strong>
+<p>➢ Proposer et réaliser la partie d'émission sonore</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<div class="section-title">Matériels nécessaires :</div>
+<p>
+➢ Carte arduino, DC-DC<br>
+➢ Diodes, résistances, support pile
+</p>
+
+<hr>
+
+<div class="section-title">Ressources disponibles :</div>
+<p>
+<span class="symbol"></span> Logiciel arduino<br>
+<span class="symbol"></span> Solidworks<br>
+<span class="symbol"></span> FabLAB<br>
+<span class="symbol"></span> Fichier joint
+</p>
+
+<hr>
+
+<div class="section-title">Méthode de fabrication :</div>
+<p>
+<span class="symbol"></span> Manuelle, laser
+</p>
+</div>
+
+<div style="text-align:center;">
+<a href="index.htm" class="button-back">Retour à l'index</a>
+</div>
+
+</div>
+
+</body>
+</html>
